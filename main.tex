@@ -1,0 +1,871 @@
+\documentclass[letterpaper, 11pt]{article}
+\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
+\usepackage{fullpage} % changes the margin
+\usepackage{fancyhdr} % for footerhttps://www.overleaf.com/3039851kkndbp#
+\usepackage[UKenglish]{isodate}% http://ctan.org/pkg/isodate for date format
+\usepackage{float}%force tables/figs into certain placement
+\usepackage{changepage}%for dichotomous key
+\usepackage{graphicx}%for figures
+\usepackage{subcaption}%for figures
+\usepackage{hyperref}%for links
+\usepackage[font=small,labelfont=bf]{caption}%for captions
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{natbib}	%for bibliography
+\usepackage{placeins}%prevent images from floating into inappropriate sections
+\usepackage{MnSymbol,wasysym}%for smileys
+
+\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi: #1}}% links DOI
+
+\usepackage{placeins}%prevent images from floating into inappropriate sections
+\newcommand{\latinword}[1]{\texttt{\itshape #1}}%use \latinword for vocab
+\def\labelitemi{--} %change bullet to em dash
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{Antliophora}
+\cfoot{}
+\rfoot{\thepage}
+\renewcommand{\footrulewidth}{0.4pt}
+\title{Antliophora}
+\author{Andrew R. Deans}
+
+\begin{document}
+\cleanlookdateon %removed ordinal date
+\maketitle
+\thispagestyle{fancy}
+\section*{Introduction}
+\textbf{Mecoptera}, \textbf{Siphonaptera}, and \textbf{Diptera} together comprise a lineage called \textbf{Antliophora} (Gr. for ``pump bearers''), insects characterized by the presence of a sperm pump. Diptera is one of the ``big four'' orders of insects, and with \textgreater154,000 described species (15\% of the total estimated diversity) this taxon is a candidate for the most diverse order of insects.
+
+\section{Mecoptera}
+Mecoptera and Siphonaptera exhibit some really interesting phenotypes, such as the presence of elongate acanthae in the proventriculus and a unique, resilin-based jumping mechanism. These orders are undoubtedly closely related, with some phylogenies placing Siphonaptera within Mecoptera, sister to Boreidae. This topology, however, is not yet a robust estimation of relationships, and we treat them separately in lab. Mecoptera exhibit the following characters:
+\begin{itemize}
+\item fore wing (if present) with \textless4 costal crossveins, 20+ closed cells
+\item head prolonged below eyes as a beak or rostrum, with chewing mouthparts at tip
+\end{itemize}
+
+%big picture questions?
+
+\subsection{Panorpidae (scorpionflies)}
+\noindent{}\textit{Diagnostic characters:} Tarsi not raptorial, and with two small claws apically; wings fairly broad at base; male genitalia somewhat resemble scorpion sting.\\
+
+\noindent{}\textit{Natural history:} As adults these insects generally scavenge on dead or nearly dead insects, including prey caught in spider webs. Larvae are likewise scavenger, mostly in leaf litter. There are about 350 species worldwide.
+
+\begin{figure}[ht!]
+  \centering
+    \includegraphics[width=0.5\textwidth]{panorpid.png}
+  \caption{Panorpidae \citep[modified from Fig. 20 in][]{webb1975mecoptera}}
+  \label{fig:panorpid}
+\end{figure}
+
+\subsection{Bittacidae (hangingflies)}
+\noindent{}\textit{Diagnostic characters:} Tarsi each with one large claw; tarsi raptorial, tarsomere 5 fold back against tarsomere 4; wings narrower at base; usually crane fly like in appearance, occasionally wingless.\\
+
+\noindent{}\textit{Natural history:} Hangingflies are predators of other insects. Males usually offer prey to females as nuptial gifts. There are about 170 species worldwide.\\
+
+\hangindent2em\textbf{Question 1:} Compare the leg morphology of these insects to Panorpidae. Can you predict how the legs function? What adaptations do you see?
+
+\begin{figure}[ht!]
+  \centering
+    \includegraphics[width=0.5\textwidth]{BittacidHabitus}
+  \caption{Bittacidae. Photo (CC BY-NC 2.0) by Ken-ichi Ueda \url{https://flic.kr/p/7XSWyo}}
+  \label{fig:bittacid}
+\end{figure}
+
+\subsection{Boreidae (snow scorpionflies)}
+\noindent{}\textit{Diagnostic characters:} Body usually mostly brown or black; antennae long; wings vestigial and hind legs long, saltatorial (may not be obvious unless you examine internal characters); female has a straight ovipositor about the same length as the rostrum; males have a blunt, rounded abdominal tip.\\
+
+\noindent{}\textit{Natural history:} As the common name suggests, adults of these insects can be found in winter, crawling or standing on snow, often at the bases of trees. Larvae and adults feed on mosses and liverworts. Males use their claw-like wings to hold onto the female. About 30 species have been described worldwide.
+
+\begin{figure}[ht!]
+  \centering
+    \includegraphics[width=0.5\textwidth]{BoreidHabitus}
+  \caption{Boreidae. Photo (CC BY-SA 2.0) by Gilles San Martin \url{https://flic.kr/p/95Lcsq}}
+  \label{fig:boreid}
+\end{figure}
+
+\section{Siphonaptera (fleas)}
+\begin{itemize}
+\item usually small, laterally flattened ectoparasites of vertebrates
+\item wingless, laterally flattened, spiny
+\item antennae small, set back in grooves (scrobes) on the head
+\item eyes reduced in size
+\item legs adapted in part for jumping
+\end{itemize}
+
+\hangindent2em\textbf{Question 2:} Given the above characters and others you observe on the specimens we have in lab, describe three adaptations to living and feeding on a vertebrate host.\\
+
+\subsection{Pulicidae (dog, cat fleas)}
+\noindent{}\textit{Diagnostic characters:} Mid coxa without internal ridge; hind tibia without apical tooth.\\
+
+\noindent{}\textit{Natural history:} This family includes most of the species that bite humans and domestic animals. At least one pulicid vectors plague. The family includes about 170 species worldwide.
+
+\begin{figure}[ht!]
+  \centering
+    \includegraphics[width=0.7\textwidth]{siphonaptera.png}
+  \caption{Siphonaptera \cite[modified from Figs. 33C–E in][]{snodgrass1944feeding}}
+  \label{fig:pulicid}
+\end{figure}
+
+\section{Diptera (flies)}
+\begin{itemize}
+\item palps with 1--5 segments
+\item 1--5 branches of R (Figure \ref{fig:dipteranwing})
+\item hind wing (haltere) relatively small, knob-like
+\end{itemize}
+
+\begin{figure}[ht!]
+  \centering
+    \includegraphics[width=0.75\textwidth]{DipteraWing}
+  \caption{Diptera, generalized fore wing \citep[][Fig. 67]{mcalpine1981manual}}
+  \label{fig:dipteranwing}
+\end{figure}
+
+\subsection{Non-Brachycera (``Nematocera'')}
+\begin{itemize}
+\item fragile, often with long legs 
+\item antenna with 4+ freely articulated flagellomeres
+\end{itemize}
+This paraphyletic (hence the quotes around the name) group of taxa is comprised of species that have retained a lot of ancestral characters. 
+
+\subsubsection{Tipulidae (crane flies)}
+\noindent{}\textit{Diagnostic characters:} Ocelli absent; antennae slender but relatively short; mesonotum with V-shaped suture; wing with many veins; 2 anal veins reach margin; legs relatively long, autotomic (easily shed)\\
+
+\noindent{}\textit{Natural history:} Tipulids exhibit diverse life history strategies. many are aquatic, or nearly so, while others can be found as larvae in rotting wood and in decaying organic matter. Larvae are known to have diverse food habits; adults typically do not feed. More than 15,000 species have been described, most of them by the prolific taxonomist, C. P. Alexander.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{TipulidHabitus}
+        \caption{Habitus \citep[][Fig. 7.1]{mcalpine1981manual}}
+        \label{fig:tipulid1}
+    \end{subfigure}
+    \qquad 
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{TipulidThorax}
+        \caption{Lateral thorax and head \citep[][Fig. 7.2]{mcalpine1981manual}}
+        \label{fig:tipulid2}
+    \end{subfigure}
+    \caption{Tipulidae}\label{fig:tipulids}
+\end{figure}
+
+\subsubsection{Simuliidae (black flies)}
+\noindent{}\textit{Diagnostic characters:} Stout-bodied, humpbacked, \textless3 mm; ocelli absent; antennae as long as or shorter than head (but still filiform); wings broad, anterior veins thick, posterior veins weakly sclerotized.\\
+
+\noindent{}\textit{Natural history:} Black flies develop in lotic habitats, where they anchor themselves to rocks and feed on passing debris (algae, \textit{etc}.) The larvae are quite sensitive to disturbance. Adults are typically blood feeders. More than 1,800 species have been described worldwide.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.32\textwidth}
+        \includegraphics[width=\textwidth]{SimuliidHead}
+        \caption{Head \citep[][Fig. 27.5]{mcalpine1981manual}}
+        \label{fig:simuliid1}
+    \end{subfigure}
+    \qquad 
+    \begin{subfigure}[ht!]{0.42\textwidth}
+        \includegraphics[width=\textwidth]{SimuliidHabitus}
+        \caption{Lateral thorax and head \citep[][Fig. 27.1]{mcalpine1981manual}}
+        \label{fig:simuliid2}
+    \end{subfigure}
+    \caption{Simuliidae}\label{fig:simuliids}
+\end{figure}
+
+\subsubsection{Chironomidae (midges)}
+\noindent{}\textit{Diagnostic characters:} Ocelli absent; antennae usually plumose, more so in males; mouthparts without mandibles; legs long, fore leg longer than others; fore wing M unbranched.\\
+
+\noindent{}\textit{Natural history:} Larval midges are generally aquatic, and species span the spectrum from highly sensitive to extremely tolerant of environmental disturbances. These flies feed on a variety of foods but generally not blood feeders. They also serve as important source of food for vertebrates. More than 10,000 species have been described worldwide.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{ChironomidWing}
+        \caption{Fore wing \citep[][Fig. 29.9]{mcalpine1981manual}}
+        \label{fig:chiron1}
+    \end{subfigure}
+    \qquad 
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{ChironomidHabitus}
+        \caption{Habitus \citep[][Fig. 29.1]{mcalpine1981manual}}
+        \label{fig:chiron2}
+    \end{subfigure}
+    \caption{Chironomidae}\label{fig:chironomids}
+\end{figure}
+
+\subsubsection{Ceratopogonidae (biting midges, no-see-ums, punkies)}
+\noindent{}\textit{Diagnostic characters:} Mouthparts with mandibles; fore wing M branched into 2--3 veins; legs relatively short. \\%needs more! small stature, eyes?
+
+\noindent{}\textit{Natural history:} These flies are generally found associated with aquatic or semi-aquatic habitats. Adults often feed on hemolymph, either from other insects or vertebrates. Some species are important vectors of disease. Adults are generally small (1--4 mm). More than 6,000 species have been described worldwide.  
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{CeratopogonidHead}
+        \caption{Head in anterior view \citep[][Fig. 28.4]{mcalpine1981manual}}
+        \label{fig:ceratopogonid1}
+    \end{subfigure}
+    \qquad 
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{CeratopogonidHabitus}
+        \caption{Habitus \citep[][Fig. 28.13]{mcalpine1981manual}}
+        \label{fig:ceratopogonid2}
+    \end{subfigure}
+    \caption{Ceratopogonidae}\label{fig:ceratopogonids}
+\end{figure}
+
+\subsubsection{Culicidae (mosquitoes)}
+\noindent{}\textit{Diagnostic characters:} Body, especially wings often scaly; ocelli absent; proboscis long; antennae plumose, more so in males; wings narrow, with scales on veins.\\
+
+\noindent{}\textit{Natural history:} Mosquito larvae develop in aquatic habitats. Adult females feed on hemolymph, and many species are important vectors of disease, including malaria, Dengue, Zika, and West Nile virus. More than 3,700 species have been described worldwide.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{CulicidWing}
+        \caption{Fore wing, with scales \citep[][Fig. 25.5]{mcalpine1981manual}}
+        \label{fig:culic1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{CulicidHabitus}
+        \caption{Habitus \citep[][Fig. 25.1]{mcalpine1981manual}}
+        \label{fig:culic2}
+    \end{subfigure}
+    \caption{Culicidae}\label{fig:culicids}
+\end{figure}
+
+\subsubsection{Psychodidae (moth, sand, drain flies)}
+\noindent{}\textit{Diagnostic characters:} Small to minute, stout and very setose;  antennae with characteristic setae rings; ocelli absent; wings broad oval, tapering apically, hairy, venation distinct; fore wing R 4-branched, with straight veins, few crossveins, and transverse fold near base of wing.\\
+
+\noindent{}\textit{Natural history:} Moth and sand fly larvae develop in habitats rich in organic matter and water, \textit{e.g.}, in drains. Phlebotominae are blood-feeders and can vector important diseases. More than 3,000 species have been described worldwide.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{PsychodidWing}
+        \caption{Fore wing, with scales \citep[][Fig. 17.11]{mcalpine1981manual}}
+        \label{fig:psychodid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{PsychodidHabitus}
+        \caption{Habitus \citep[][Fig. 17.1]{mcalpine1981manual}}
+        \label{fig:psychodid2}
+    \end{subfigure}
+    \caption{Psychodidae}\label{fig:psychodids}
+\end{figure}
+
+\subsubsection{Cecidomyiidae (gall midges)}
+\noindent{}\textit{Diagnostic characters:} Eyes usually meet above antennae; wing venation reduced, \textless7 prominent veins reach margin; C continues around wing apex, though weaker posteriorly; first tarsal segment very small; antennae and legs long, slender.\\%can't we do better?
+
+\noindent{}\textit{Natural history:} As their common name suggests, these flies usually develop inside galls, where they feed on plant material. Some species, however, are important, free-roaming predators of other invertebrates. About 6,300 species have been described worldwide.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{CecidomyiidWing}
+        \caption{Fore wing \citep[][Fig. 16.13]{mcalpine1981manual}}
+        \label{fig:cecidomyiid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.25\textwidth}
+        \includegraphics[width=\textwidth]{CecidomyiidHead}
+        \caption{Habitus \citep[][Fig. 16.2]{mcalpine1981manual}}
+        \label{fig:cecidomyiid2}
+    \end{subfigure}
+    \caption{Cecidomyiidae}\label{fig:cecidomyiids}
+\end{figure}
+
+\subsubsection{Sciaridae (dark-winged fungus gnats)}
+\noindent{}\textit{Diagnostic characters:} Usually mostly black or dark brown in color; eyes meet above antennae; ocelli present; wing venation reduced, usually \textless7 prominent veins reach margin; C ends at wing tip.\\
+
+\noindent{}\textit{Natural history:} Larvae generally feed on fungi, and some species are important pests of commercial mushrooms. More than 2,500 species have been described worldwide.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{SciaridWing}
+        \caption{Fore wing \citep[][Fig. 15.19]{mcalpine1981manual}}
+        \label{fig:sciarid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.25\textwidth}
+        \includegraphics[width=\textwidth]{SciaridHead}
+        \caption{Habitus \citep[][Fig. 15.4]{mcalpine1981manual}}
+        \label{fig:sciarid2}
+    \end{subfigure}
+    \caption{Sciaridae}\label{fig:sciarids}
+\end{figure}
+
+\subsubsection{Mycetophilidae (fungus gnats)}
+\noindent{}\textit{Diagnostic characters:} Head often concealed in dorsal view; ocelli present; antennae longer than thorax; eyes do not meet above antennae; coxae relatively elongate.\\
+
+\noindent{}\textit{Natural history:} With \textgreater4,500 species worldwide, these flies comprise another important group of fungivores. As with Sciaridae, adults are harmless.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{MycetophilidWing}
+        \caption{Fore wing \citep[][Fig. 14.24]{mcalpine1981manual}}
+        \label{fig:mycetophilid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.27\textwidth}
+        \includegraphics[width=\textwidth]{MycetophilidHead}
+        \caption{Head in lateral view \citep[][Fig. 13.1]{mcalpine1981manual}}
+        \label{fig:mycetophilid2}
+    \end{subfigure}
+    \caption{Mycetophilidae}\label{fig:mycetophilids}
+\end{figure}
+
+\subsubsection{Bibionidae (March flies)}
+\noindent{}\textit{Diagnostic characters:} Body with many erect bristles (\textit{i.e.}, ``hairy''), usually black; male head shape different from female; ocelli present; antennae shorter than thorax, arising low on face; basal M cell present; anal angle of wing somewhat enlarged.\\
+
+\noindent{}\textit{Natural history:} Larvae feed in leaf litter and topsoil on decaying organic matter. Adults emerge in spring or fall and often form large mating swarms. In some regions (\textit{e.g.}, Florida) these flies are referred to as ``love bugs''. About 1,200 species have been described worldwide.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.25\textwidth}
+        \includegraphics[width=\textwidth]{BibionidHead}
+        \caption{Female head in lateral view \citep[][Fig. 13.3]{mcalpine1981manual}}
+        \label{fig:bibionid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.47\textwidth}
+        \includegraphics[width=\textwidth]{BibionidHabitus}
+        \caption{Male habitus \citep[][Fig. 13.1]{mcalpine1981manual}}
+        \label{fig:bibionid2}
+    \end{subfigure}
+    \caption{Bibionidae}\label{fig:bibionids}
+\end{figure}
+
+\subsection{Brachycera (short-horned flies)}
+\begin{itemize}
+\item generally stouter bodied than ``Nematocera''
+\item flagellum at least partly fused, with \textless5 articulations, very rarely \textgreater10
+\item palps with 0--2 segments
+\end{itemize}
+Unlike ``Nematocera'', this suborder is demonstrably monophyletic. There have been several attempts to subdivide this taxon, but each scheme usually results in one paraphyletic group and one monophyletic group.
+
+\subsubsection{Stratiomyidae (soldier flies)}
+\noindent{}\textit{Diagnostic characters:} Often mimics of wasps or bees; 3rd antennal segment elongate, annulate or rounded, with arista; fore wing d cell round, not elongate, Rs bunched near anterior margin, R4 and R5 fork anterior to wing tip, C ends before wing tip.\\
+
+\noindent{}\textit{Natural history:} Larvae generally feed on decaying plants, and maggots can frequently be found in compost bins. Some species are aquatic. About 2,700 species have been described worldwide.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{StratiomyidWing}
+        \caption{Fore wing \citep[][Fig. 36.33]{mcalpine1981manual}}
+        \label{fig:stratiomyid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.2\textwidth}
+        \includegraphics[width=\textwidth]{StratiomyidAntennae}
+        \caption{Antenna variation \citep[][Figs. 36.9,12,15,18]{mcalpine1981manual}}
+        \label{fig:stratiomyid2}
+    \end{subfigure}
+    \caption{Stratiomyidae}\label{fig:stratiomyids}
+\end{figure}
+
+\subsubsection{Tabanidae (horse and deer flies)}
+\noindent{}\textit{Diagnostic characters:} Mouthparts modified for sucking blood and nectar; eyes often with iridescent patterns; 3rd antennal segment never aristate; fore wing R4 and R5 fork encloses wing tip, d cell elongate; postscutellum present; first visible abdominal tergite divided dorsally.\\
+
+\noindent{}\textit{Natural history:} Larvae are predators and can usually be found in/near aquatic habitats. Adult females are usually blood feeders, and some can vector important human diseases (\textit{e.g.}, \textit{Loa loa}).Approximately 4,500 species have been described worldwide.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{TabanidWing}
+        \caption{Fore wing \citep[][Fig. 31.35]{mcalpine1981manual}}
+        \label{fig:tabanid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{TabanidHabitus}
+        \caption{Habitus \citep[][Fig. 31.1]{mcalpine1981manual}}
+        \label{fig:tabanid2}
+    \end{subfigure}
+    \caption{Tabanidae}\label{fig:tabanids}
+\end{figure}
+
+\subsubsection{Asilidae (robber flies)}
+\noindent{}\textit{Diagnostic characters:} Medium-sized to large flies, variable but often mimicking bees or with elongate, tapering abdomen; top of head (vertex) distinctly depressed between eyes; face with mystax (mustache); mouthparts heavily sclerotized, pointed, for piercing; fore wing CuA2 reaches wing margin or joins A1 near margin.\\
+
+\noindent{}\textit{Natural history:} Larval asilids usually develop in rotting wood or leaf litter, where they develop as predators or saprophages. Adults are effective predators of other insects, often larger than themselves. More than 7,000 species have been described worldwide.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.25\textwidth}
+        \includegraphics[width=\textwidth]{AsilidHead}
+        \caption{Head \citep[][Fig. 42.35]{mcalpine1981manual}}
+        \label{fig:asilid2}
+    \end{subfigure}
+    \qquad 
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{AsilidHabitus}
+        \caption{Habitus \citep[][Fig. 42.1]{mcalpine1981manual}}
+        \label{fig:asilid1}
+    \end{subfigure}
+    \caption{Asilidae}\label{fig:asilids}
+\end{figure}
+
+\subsubsection{Bombyliidae (bee flies)}
+\noindent{}\textit{Diagnostic characters:} Extremely variable in form and size but commonly hairy and stout, mimicking bees; proboscis often slender and long;; wing venation variable but veins often strongly curved anteriorly; CuA2 reaches wing margin or joins A1 near margin; cell bm with 3 corners on the end.\\
+
+\noindent{}\textit{Natural history:} About 4,500 bee flies have been described worldwide, the majority of which are assumed to develop as cleptoparasites, predators, and/or parasitoids of insects that live in burrows (\textit{e.g.}, solitary bees).
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{BombyliidWing}
+        \caption{Fore wing \citep[][Fig. 45.1]{mcalpine1981manual}}
+        \label{fig:bombyl2}
+    \end{subfigure}
+    \qquad 
+    \begin{subfigure}[ht!]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{BombyliidHabitus}
+        \caption{Habitus \citep[][Fig. 45.1]{mcalpine1981manual}}
+        \label{fig:bombyl1}
+    \end{subfigure}
+    \caption{Bombyliidae}\label{fig:bombyls}
+\end{figure}
+
+\paragraph{Eremoneura} The remaining flies belong to Eremoneura and are characterized, in part, by having three larval instars and relatively few wing veins.
+
+\subsubsection{Dolichopodidae (long-legged flies)}
+\noindent{}\textit{Diagnostic characters:} Long-legged and usually metallic green or coppery; head shape is distinctive; antennae usually aristate; CuA2 joins A1 far from margin; Rs 2-branched, branches, r-m crossvein crowded near wing base, anal cell small or absent; male genitalia often large and folded under abdomen.
+
+\noindent{}\textit{Natural history:} Adult dolichopodids and most larvae  develop as predators of other insects; some larvae, however, are phytophagous. Abut 7,000 species have been described worldwide.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{DolichopodidWing}
+        \caption{Fore wing \citep[][Fig. 48.30]{mcalpine1981manual}}
+        \label{fig:dolicho1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.22\textwidth}
+        \includegraphics[width=\textwidth]{DolichopodidHead}
+        \caption{Head \citep[][Fig. 48.4]{mcalpine1981manual}}
+        \label{fig:dolicho2}
+    \end{subfigure}
+    \caption{Dolichopodidae}\label{fig:dolichos}
+\end{figure}
+
+\subsubsection{Empididae (dance flies)}
+\noindent{}\textit{Diagnostic characters:} Body variable in shape but usually hump-backed, dome-shaped, and colorful but not metallic; 3rd antennal stylate or aristate; CuA2 joins A1 far from margin (look for large open cell in lower part of wing); wing venation otherwise variable, R 2--3-branched, branches and r-m crossvein arise distally.\\ %check venation
+
+\noindent{}\textit{Natural history:} Adults and larvae of this family are thought to be predators of other insects. larvae are generally found inleaf litter and rotting wood, while adults are most frequently collected in mating swarms. Males usually present females with prey as nuptial gifts, although in some species simply present silken balloons. About 3,000 species have been described worldwide.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{EmpididWing}
+        \caption{Fore wing \citep[][Fig. 47.3]{mcalpine1981manual}}
+        \label{fig:empidid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.42\textwidth}
+        \includegraphics[width=\textwidth]{EmpididHabitus}
+        \caption{Habitus \citep[][Fig. 47.1]{mcalpine1981manual}}
+        \label{fig:empidid2}
+    \end{subfigure}
+    \caption{Empididae}\label{fig:empidids}
+\end{figure}
+
+\paragraph{Cyclorrhapha} The remaining flies are classified in Cyclorrhapha, which includes all flies that have circular opercula on their puparia (pupa inside exuviae), through which they escape during eclosion.
+
+\subsubsection{Pipunculidae (big-headed flies)}
+\noindent{}\textit{Diagnostic characters:} CuA2 reaches wing margin or joins A1 near margin; R4+5 do not branch, C ends at wing apex; antennae aristate; head strongly hemispherical, eyes LARGE; usually small, black and shiny.\\
+
+\noindent{}\textit{Natural history:} Larvae develop almost exclusively as parasitoids of Auchenorrhyncha. About 1,200 spcie have been described worldwide.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{PipunculidWing}
+        \caption{Fore wing \citep[][Fig. 4.50]{mcalpine1981manual}}
+        \label{fig:pipunculid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.42\textwidth}
+        \includegraphics[width=\textwidth]{PipunculidHabitus}
+        \caption{Habitus \citep[][Fig. 53.1]{mcalpine1981manualv2}}
+        \label{fig:pipunculid2}
+    \end{subfigure}
+    \caption{Pipunculidae}\label{fig:pipunculids}
+\end{figure}
+
+\subsubsection{Syrphidae (hover, drone flies)}
+\noindent{}\textit{Diagnostic characters:} CuA2 reaches wing margin or joins A1 near margin; spurious vein present in wing between R and M; M1 usually curves up to meet R4+5; antennae variable, often aristate; many mimic wasps and bees.\\
+
+\noindent{}\textit{Natural history:} About 6,000 species of hoverflies have been described worldwide, and larvae develop usually as predators (mainly of soft-bodied prey, like aphids) or saprophages. Adults are adept fliers that frequently mimic aculeate wasps.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{SyrphidWing}
+        \caption{Fore wing \citep[][Fig. 52.52]{mcalpine1981manualv2}}
+        \label{fig:syrphid2}
+    \end{subfigure}
+    \qquad 
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{SyrphidHabitus}
+        \caption{Habitus \citep[][Fig. 52.1]{mcalpine1981manualv2}}
+        \label{fig:syrpidh1}
+    \end{subfigure}
+    \caption{Syrphidae}\label{fig:syrphids}
+\end{figure}
+
+\subsubsection{Phoridae (scuttle, coffin flies, \textit{etc}.)}
+\noindent{}\textit{Diagnostic characters:} CuA2 joins A1 far from margin; wings very distinct; Rs crowded anteriorly, 4--5 weak veins posteriorly; antennae flagellum globular with long arista; hind femora flattened; body somewhat humpbacked.\\
+
+\noindent{}\textit{Natural history:} Scuttle flies are extraordinarily diverse ecologically, feeding on organic matter in just about every stage/state/derivation. Some feed on decaying plants, others on dying insects, others are parasitoids, \textit{etc}. About 4,000 species have been described, but tens of thousands remain to be described.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{PhoridWing}
+        \caption{Fore wing \citep[][Fig. 51.44]{mcalpine1981manualv2}}
+        \label{fig:phorid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{PhoridHabitus}
+        \caption{Habitus \citep[][Fig. 51.1]{mcalpine1981manualv2}}
+        \label{fig:phorid2}
+    \end{subfigure}
+    \caption{Phoridae}\label{fig:phorids}
+\end{figure}
+
+\paragraph{Schizophora} This taxon is thought to be monophyletic. It is comprised of species that usually share the following characteristics: 
+\begin{itemize}
+\item ptilinal suture (= frontal suture) present above the antennae; corresponds to structure (ptilinum) used to break out of puparium
+\item CuA2 joins A1 far from margin
+\item antennae almost always aristate
+\end{itemize}
+This taxon has traditionally been divided into two taxa, Acalyptratae and Calyptratae, based, in part, on the morphology of the fore wing. See below.
+
+\paragraph{``Acalyptratae''} The next several families (before we enter Calyptratae) are commonly referred to as ``acalypterate flies'', a notoriously difficult group of flies to diagnose at almost any level. They generally share these character states:
+\begin{itemize}
+\item calypter almost always small to absent
+\item transverse suture on thorax almost always absent
+\item greater ampulla usually absent (bump near wing base, anterior to calypters)
+\item antennal pedicel usually without complete dorsal seam
+\item generally smaller and less setose than calyptrates
+\item costa entire or broken; subcosta complete or incomplete (Figure \ref{fig:acalypteratewing})
+\end{itemize}
+
+\begin{figure}[ht!]
+  \centering
+    \includegraphics[width=0.5\textwidth]{AcalyptrateWing}
+  \caption{Reference acalypterate wing \citep[][Fig. 4.59]{mcalpine1981manual}}
+  \label{fig:acalypteratewing}
+\end{figure}
+
+\subsubsection{Ulidiidae (picture-winged flies)}
+\noindent{}\textit{Diagnostic characters:} Sc complete, C usually entire; anal cell (cup in Figure \ref{fig:ulidiid1}) usually with acute projection posteriorly; apex of Sc not bending abruptly; oral vibrissae lacking (Figure \ref{fig:ulidiid2}); small to medium-sized, wings usually patterned.\\
+
+\noindent{}\textit{Natural history:} Larvae typically develop as saprophages or herbivores. Approximately 700 species have been described worldwide. Some resources still refer to this family as Otididae.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.47\textwidth}
+        \includegraphics[width=\textwidth]{UlidiidWing}
+        \caption{Fore wing \citep[][Fig. 63.15]{mcalpine1981manualv2}}
+        \label{fig:ulidiid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.26\textwidth}
+        \includegraphics[width=\textwidth]{UlidiidHead}
+        \caption{Head \citep[][Fig. 63.7]{mcalpine1981manualv2}}
+        \label{fig:ulidiid2}
+    \end{subfigure}
+    \caption{Ulidiidae}\label{fig:ulidiids}
+\end{figure}
+
+\subsubsection{Tephritidae (fruit flies)}
+\noindent{}\textit{Diagnostic characters:} Sc usually incomplete, C usually broken; apex of Sc bent abruptly at end; small to medium-sized, often patterned on wings, sometimes also on body; anal cell sometimes with acute projection (as in Ulidiidae).\\
+
+\noindent{}\textit{Natural history:} The number of described species of fruit flies is approaching 5,000, which includes several significant pests. Larvae develop inside fruit, flowers, galls, and other plant parts. Note that this family does \textit{not} include \textit{Drosophila}, which are often referred to incorrectly as ``fruit flies''. 
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{TephritidWing}
+        \caption{Fore wing \citep[][Fig. 4.56]{mcalpine1981manual}}
+        \label{fig:tephritid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{TephritidHabitus}
+        \caption{Habitus \citep[][Fig. 66.1]{mcalpine1981manualv2}}
+        \label{fig:tephritid2}
+    \end{subfigure}
+    \caption{Tephritidae}\label{fig:tephritids}
+\end{figure}
+
+\subsubsection{Agromyzidae (leafminer flies)}
+\noindent{}\textit{Diagnostic characters:} Sc incomplete, costa broken once; anal cell present; oral vibrissae present; postvertical bristles diverging; small, usually black and/or yellow, bristly.\\
+
+\noindent{}\textit{Natural history:} Most agromyzids feed as larvae inside leaves, and the family includes many important pest species. Most are highly host-specific. Approximately 2,500 species have been described.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{AgromyzidWing}
+        \caption{Fore wing \citep[][Fig. 73.9]{mcalpine1981manualv2}}
+        \label{fig:agromyzid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{AgromyzidHead}
+        \caption{Head \citep[][Fig. 73.2]{mcalpine1981manualv2}}
+        \label{fig:agromyzid2}
+    \end{subfigure}
+    \caption{Agromyzidae}\label{fig:agromyzids}
+\end{figure}
+
+\subsubsection{Chloropidae (grass or frit flies)}
+\noindent{}\textit{Diagnostic characters:} Sc incomplete, Costa broken once; anal cell absent; ocellar triangle greatly enlarged, usually shiny; oral vibrissae absent; diverse head shapes, smooth, very few setae; tiny, often colorful flies.\\
+
+\noindent{}\textit{Natural history:} Chloropids are difficult to characterize ecologically, as the larvae exhibit almost every conceivable life history strategy. Most larvae, however, develop as herbivores on grasses. About 2,000 species have been described worldwide.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{ChloropidWing}
+        \caption{Fore wing \citep[][Fig. 99.36]{mcalpine1981manualv2}}
+        \label{fig:chloropid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.25\textwidth}
+        \includegraphics[width=\textwidth]{ChloropidHead}
+        \caption{Head \citep[][Fig. 99.3]{mcalpine1981manualv2}}
+        \label{fig:chloropid2}
+    \end{subfigure}
+    \caption{Chloropidae}\label{fig:chloropids}
+\end{figure}
+
+\subsubsection{Drosophilidae (pomace, vinegar flies)}
+\noindent{}\textit{Diagnostic characters:} Sc incomplete, costa broken twice; anal cell present; postvertical bristles converging; arista plumose; oral vibrissae present; usually small, yellowish, brownish, or grayish.\\
+
+\noindent{}\textit{Natural history:} Drosophilidae, yet another ecologically diverse family, comprises some 4,000+ described species. Several species serve as important models for a variety of genetic research, and other species are important pestiferous herbivores.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{DrosophilidWing}
+        \caption{Fore wing \citep[][Fig. 95.6]{mcalpine1981manualv2}}
+        \label{fig:drosophilid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.27\textwidth}
+        \includegraphics[width=\textwidth]{DrosophilidHead}
+        \caption{Head \citep[][Fig. 95.6]{mcalpine1981manualv2}}
+        \label{fig:drosophilid2}
+    \end{subfigure}
+    \caption{Drosophilidae}\label{fig:drosophilids}
+\end{figure}
+
+\paragraph{Calyptratae} The remaining families are part of an apparently monophyletic taxon called Calyptratae, named for the expanded calypters of the fore wing. These insects also usually have the following characters:
+\begin{itemize}
+\item transverse suture complete on thorax
+\item greater ampulla (bump at base of wing, anterior to calypters) present, enlarged 
+\item antennal pedicel with complete dorsal seam
+\item generally larger, more setose than acalyptrates
+\end{itemize}
+
+\begin{figure}[ht!]
+  \centering
+    \includegraphics[width=0.9\textwidth]{CalyptrateMorph}
+  \caption{Calyptratae morphology; \textbf{ar} = arista, \textbf{mr} = meron, \textbf{npl} = notopleuron, \textbf{npl s} = notopleural seta, \textbf{sbsctl} = subscutellum, \textbf{sctl} = scutellum \citep[][Fig. 2.66]{mcalpine1981manual}}
+  \label{fig:calyptratemorph}
+\end{figure}
+
+\subsubsection{Muscidae (house flies and relatives)}
+\noindent{}\textit{Diagnostic characters:} Usually drab but is also variable in color and form; meron without row of bristles; no setae present on ventral surface of scutellum; fore wing \texorpdfstring{A\textsubscript{1}}{A1} short and not reaching margin; \texorpdfstring{R\textsubscript{5}}{R5} cell parallel-sided or narrowing distally.\\
+
+\noindent{}\textit{Natural history:} Larvae typically develop in decaying substrates, like dung and dead organisms. Adults are saprophages, blood-feeders, and/or predators of other insects. About 4,000 species have been described worldwide.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{MuscidWings}
+        \caption{Fore wings \citep[][Fig. 105.22,24]{mcalpine1981manualv2}}
+        \label{fig:muscid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{MuscidHabitus}
+        \caption{Habitus \citep[][Fig. 105.1]{mcalpine1981manualv2}}
+        \label{fig:muscid2}
+    \end{subfigure}
+    \caption{Muscidae}\label{fig:muscids}
+\end{figure}
+
+\subsubsection{Anthomyiidae (root-maggot flies)}
+\noindent{}\textit{Diagnostic characters:} Meron without row of bristles; \texorpdfstring{A\textsubscript{1}}{A1} reaching wing margin, at least as fold; \texorpdfstring{R\textsubscript{5}}{R5} cell always parallel-sided; scutellum with setae ventrally; hairs often present under scutellum; almost always drab: black, gray, brown; thinner abdomen and lighter color than Muscidae.\\
+
+\noindent{}\textit{Natural history:} Larvae typically develop in decaying plant material, and many species are associated with roots. This family, comprised of about 2,000 described species, includes several important pests (\textit{e.g.}, some \textit{Delia} spp.).\\
+
+\hangindent2em\textbf{Question 3:} You may have noticed by now that many of the characters that separate families are quite subtle---characters that would almost be used to separate \textit{species} in other taxa. What does it mean to be a family \textit{vs}. a genus \textit{vs}. species?\\
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{AnthomyiidWing}
+        \caption{Fore wing \citep[][Fig. 104.29]{mcalpine1981manualv2}}
+        \label{fig:anthomyiid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{AnthomyiidThorax}
+        \caption{Thorax \citep[][Fig. 104.18]{mcalpine1981manualv2}}
+        \label{fig:anthomyiid2}
+    \end{subfigure}
+    \caption{Anthomyiidae}\label{fig:anthomyiids}
+\end{figure}
+
+\subsubsection{Tachinidae (parasitic flies)}
+\noindent{}\textit{Diagnostic characters:} Subscutellum developed (sbsctl in Figure \ref{fig:calyptratemorph}); \texorpdfstring{R\textsubscript{5}}{R5} cell narrowed or closed distally; arista usually not plumose (Figure \ref{fig:tachinid1}); meron with row of bristles (see Figure \ref{fig:calyptratemorph}, near hind coxa (cx 3)).\\
+
+\noindent{}\textit{Natural history:} Tachinids develop as parasitoids of other invertebrates, especially insects, and most are suspected to not be very host-specific. There are well over 8,000 described species.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{TachinidWing}
+        \caption{Fore wing \citep[][Fig. 110.201]{mcalpine1981manualv2}}
+        \label{fig:tachinid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.21\textwidth}
+        \includegraphics[width=\textwidth]{TachinidHead}
+        \caption{Head in lateral view \citep[][Fig. 110.91]{mcalpine1981manualv2}}
+        \label{fig:tachinid2}
+    \end{subfigure}
+    \caption{Tachinidae}\label{fig:tachinids}
+\end{figure}
+
+\subsubsection{Calliphoridae (blow flies)}
+\noindent{}\textit{Diagnostic characters:} Often (but not always!) metallic in color; arista plumose; meron with row of bristles; 2 notopleural bristles present; \texorpdfstring{R\textsubscript{5}}{R5} cell narrowed or closed distally.\\
+
+\noindent{}\textit{Natural history:} Larvae develop on carrion and dung, while adults are frequently found on flowers. Approximately 1,100 species have been described, and the family is suspected to be polyphyletic.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{CalliphoridWing}
+        \caption{Fore wing \citep[][Fig. 106.6]{mcalpine1981manualv2}}
+        \label{fig:calliphorid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{CalliphoridHead}
+        \caption{Head in dorsal view \citep[][Fig. 106.18]{mcalpine1981manualv2}}
+        \label{fig:calliphorid2}
+    \end{subfigure}
+    \caption{Calliphoridae}\label{fig:calliphorids}
+\end{figure}
+
+\subsubsection{Sarcophagidae (flesh flies)}
+\noindent{}\textit{Diagnostic characters:} Not metallic, generally thorax with black/gray stripes, apex of abdomen usually reddish or orange; arista usually plumose only on proximal half (Figure \ref{fig:sarcoph2}); meron with row of bristles; usually 4 notopleural bristles present, rarely 3; \texorpdfstring{R\textsubscript{5}}{R5} cell narrowed or closed distally.\\
+
+\noindent{}\textit{Natural history:} About 2,500 species have been described, and the maggots generally feed on carrion, on pollen stores of bees, or develop as parasitoids of other insects. 
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{SarcophagidWing}
+        \caption{Fore wing \citep[][Fig. 116.30]{mcalpine1981manualv2}}
+        \label{fig:sarcoph1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.25\textwidth}
+        \includegraphics[width=\textwidth]{SarcophagidHead}
+        \caption{Head in antero-lateral view \citep[][Fig. 116.13]{mcalpine1981manualv2}}
+        \label{fig:sarcoph2}
+    \end{subfigure}
+    \caption{Sarcophagidae}\label{fig:sarcophs}
+\end{figure}
+
+\subsubsection{Hippoboscidae (louse flies)}
+\noindent{}\textit{Diagnostic characters:} Highly modified, louse-like in shape, often wingless; body setae relatively short; eyes often very small; coxae widely separated; venation reduced, Rs located anteriorad of typical position in Diptera; wings sometimes dehiscent (wings fell off of specimen); segmentation on abdomen indistinct.\\
+
+\noindent{}\textit{Natural history:} Adults are parasites of mammals, feeding on blood and occasionally being a nuisance. The larval stage almost reaches maturity inside the mother, who nourishes the maggot with a nutritious ``milk''. When the maggot emerges from the female it immediately pupates inside a puparium.\\
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{HippoboscidHabitus}
+        \caption{Winged female \citep[][Fig. 111.1]{mcalpine1981manualv2}}
+        \label{fig:hippoboscid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.35\textwidth}
+        \includegraphics[width=\textwidth]{HippoboscidFemale}
+        \caption{Wingless female \citep[][Fig. 111.36]{mcalpine1981manualv2}}
+        \label{fig:hippoboscid2}
+    \end{subfigure}
+    \caption{Hippoboscidae}\label{fig:hippoboscids}
+\end{figure}
+
+\hangindent2em\textbf{Question 4:} How is the developmental strategy of Hipposboscidae (\textit{i.e}., laying what is essentially a pupa on the host) adaptive, given what you know about their other life history traits.\\
+
+\FloatBarrier
+\clearpage
+
+\section*{Epilogue}
+This handout is part of an open curriculum, initially developed by Andrew R. Deans at the Pennsylvania State University. Original files are available free for anyone to download, copy, modify, and improve at the Open Entomology GitHub repository \citep{ENT532}, which also provides a mechanism for reporting problems and other feedback:\\
+\url{https://github.com/OpenEntomology/InsectBiodiversityEvolution/issues}
+
+\section*{Acknowledgments}
+Most of the illustrations were generously made available by Agriculture Canada. The reproduction of the illustrations from this work is not produced in affiliation with, or with the endorsement of the Government of Canada. Other images were borrowed from Wikimedia Commons, Flickr, and the Biodiversity Heritage Library. The authors made a good faith effort to adhere to the terms of their respective Creative Commons licenses and provide appropriate credit and links to source pages. All images were accessed 19 October 2016. We thank these artists for making their images available for educational purposes.
+
+\FloatBarrier
+% adding bibliography here
+\bibliographystyle{myplainnat}
+\bibliography{bib}
+
+\end{document}
+
+%%%%%%%%% GARAGE
+\noindent{}\textit{Diagnostic characters:} Proboscis long, slender, usually 2$\times$ head; frontal suture sometimes apparently absent; antennae sometimes not aristate; M1 usually joins R4+5 so that there is an extra closed cell, sometimes crossvein between Sc and R; generally lacking large setae; many mimic wasps, atypical acalyptrates.\\
+
+\noindent{}\textit{Natural history:} \\
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{ConopidWing}
+        \caption{Fore wing \citep[][Fig. 4.53]{mcalpine1981manual}}
+        \label{fig:conopid1}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{ConopidHabitus}
+        \caption{Habitus \citep[][Fig. 54.1]{mcalpine1981manualv2}}
+        \label{fig:conopid2}
+    \end{subfigure}
+    \caption{Conopidae}\label{fig:conopids}
+\end{figure}
+
+ 
+
+\section*{Materials}
+\begin{itemize}
+\item specimens (provided)
+\item fine forceps, probes (provided)
+\item sorting tray, watch glasses, gloves, safety glasses, glycerine, ethanol (provided)
+\item pencil/paper for sketches
+\end{itemize}
+
+\section*{Safety}
+We will be working with sharp tools and insects on pins. Wear your personal protective gear at all times. Specimens are to be returned to their vials after lab, and glycerine and ethanol will be collected for proper disposal or reuse.
+
+\section*{Methods}
+Working with a partner, organize your space, specimens, tools, and microscope. Use your probe and forceps to manipulate the specimen. In this lab, however, we will not be dissecting specimens (unless otherwise noted). You can start anywhere in the handout.
